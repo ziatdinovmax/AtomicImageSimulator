@@ -273,7 +273,7 @@ class SimulateLattice():
             channel = atom_ch_all[atom_idx]
             x = int(np.around(coord_px[0])) + eps2
             y = int(np.around(coord_px[1])) + eps2
-            #cfp=np.random.randint(200, 205)/100
+            cfp=np.random.randint(200, 205)/100
             a = MakeAtom(self.sc, atom_idx, r_mask, cfp=2)
             atom = a.atom2dgaussian()
             mask = a.atommask()
